@@ -8,13 +8,21 @@ server:
     # Accepting HTTPS connections only
     enabled: true
     # The path to the keystore containing the certificate
-    key-store: classpath:keystore.p12
+    key-store: classpath:server-keystore.p12
     # The password used to generate the certificate
-    key-store-password: tomcat
+    key-store-password: server
     # The format used for the keystore
     key-store-type: PKCS12
     # The alias mapped to the certificate
-    key-alias: tomcat
+    key-alias: server
+    # The path to the truststore containing the client certificate
+    trust-store: classpath:server-truststore.jks
+    # The password used to generate the truststore
+    trust-store-password: serverjks
+    # Truststore alias
+    trust-store-alias: ca
+    # Client authentication is must
+    client-auth: need
 
 #logging:
 #  level:

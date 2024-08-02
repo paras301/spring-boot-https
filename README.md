@@ -1,2 +1,2 @@
-This project is a part-1 of the series where I demonstrate how to setup HTTPS with spring framework using self signed certificates.
-You can read the whole story at - 
+This project is a part-2 of the series where I demonstrate how to setup mutual TLS HTTPS with spring framework using self signed certificates.
+You can read the whole story at - https://paras301.medium.com/implementing-ssl-tls-in-springboot-mutual-tls-mtls-part-2-b3eb64c6a78e
